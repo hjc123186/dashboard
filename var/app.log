@@ -1,0 +1,1424 @@
+2016-12-15 14:01:02 [1327] [INFO] Starting gunicorn 18.0
+2016-12-15 14:01:02 [1327] [INFO] Listening at: http://0.0.0.0:8081 (1327)
+2016-12-15 14:01:02 [1327] [INFO] Using worker: sync
+2016-12-15 14:01:02 [1333] [INFO] Booting worker with pid: 1333
+2016-12-15 14:01:02 [1334] [INFO] Booting worker with pid: 1334
+2016-12-15 14:01:02 [1339] [INFO] Booting worker with pid: 1339
+2016-12-15 14:01:02 [1347] [INFO] Booting worker with pid: 1347
+/opt/apps/open-falcon/dashboard/rrd/store.py:38: Warning: Data truncated for column 'counters' at row 1
+  cursor.execute(*a, **kw)
+2016-12-16 23:36:34 [1333] [ERROR] Error processing request.
+Traceback (most recent call last):
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 92, in handle
+    req = six.next(parser)
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/parser.py", line 39, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/message.py", line 152, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/message.py", line 49, in __init__
+    unused = self.parse(self.unreader)
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/message.py", line 164, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/message.py", line 155, in get_data
+    data = unreader.read()
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/opt/apps/open-falcon/dashboard/env/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+error: [Errno 104] Connection reset by peer
+2016-12-17 11:40:46 [1327] [CRITICAL] WORKER TIMEOUT (pid:1334)
+2016-12-17 11:40:46 [1327] [CRITICAL] WORKER TIMEOUT (pid:1334)
+2016-12-17 11:40:46 [5192] [INFO] Booting worker with pid: 5192
+2016-12-17 21:07:37 [1327] [CRITICAL] WORKER TIMEOUT (pid:1347)
+2016-12-17 21:07:37 [1327] [CRITICAL] WORKER TIMEOUT (pid:1347)
+2016-12-17 21:07:37 [18550] [INFO] Booting worker with pid: 18550
+2016-12-18 05:58:49 [1327] [CRITICAL] WORKER TIMEOUT (pid:5192)
+2016-12-18 05:58:49 [1327] [CRITICAL] WORKER TIMEOUT (pid:5192)
+2016-12-18 05:58:49 [1848] [INFO] Booting worker with pid: 1848
+2016-12-18 15:27:07 [1327] [CRITICAL] WORKER TIMEOUT (pid:1339)
+2016-12-18 15:27:07 [1327] [CRITICAL] WORKER TIMEOUT (pid:1339)
+2016-12-18 15:27:07 [20918] [INFO] Booting worker with pid: 20918
+2016-12-19 12:21:30 [1327] [CRITICAL] WORKER TIMEOUT (pid:18550)
+2016-12-19 12:21:30 [1327] [CRITICAL] WORKER TIMEOUT (pid:18550)
+2016-12-19 12:21:30 [29175] [INFO] Booting worker with pid: 29175
+2016-12-19 15:37:43 [1327] [INFO] Handling signal: term
+2016-12-19 15:37:43 [29175] [INFO] Worker exiting (pid: 29175)
+2016-12-19 15:37:43 [20918] [INFO] Worker exiting (pid: 20918)
+2016-12-19 15:37:43 [1848] [INFO] Worker exiting (pid: 1848)
+2016-12-19 15:37:43 [1333] [INFO] Worker exiting (pid: 1333)
+2016-12-19 15:37:43 [1327] [INFO] Shutting down: Master
+2016-12-19 15:37:45 [1919] [INFO] Starting gunicorn 18.0
+2016-12-19 15:37:45 [1919] [INFO] Listening at: http://0.0.0.0:8081 (1919)
+2016-12-19 15:37:45 [1919] [INFO] Using worker: sync
+2016-12-19 15:37:45 [1924] [INFO] Booting worker with pid: 1924
+2016-12-19 15:37:45 [1930] [INFO] Booting worker with pid: 1930
+2016-12-19 15:37:45 [1931] [INFO] Booting worker with pid: 1931
+2016-12-19 15:37:45 [1943] [INFO] Booting worker with pid: 1943
+2016-12-20 12:21:37 [1919] [CRITICAL] WORKER TIMEOUT (pid:1931)
+2016-12-20 12:21:37 [1919] [CRITICAL] WORKER TIMEOUT (pid:1931)
+2016-12-20 12:21:37 [5778] [INFO] Booting worker with pid: 5778
+2016-12-20 17:05:01 [1919] [INFO] Handling signal: term
+2016-12-20 17:05:01 [5778] [INFO] Worker exiting (pid: 5778)
+2016-12-20 17:05:01 [1943] [INFO] Worker exiting (pid: 1943)
+2016-12-20 17:05:01 [1930] [INFO] Worker exiting (pid: 1930)
+2016-12-20 17:05:01 [1924] [INFO] Worker exiting (pid: 1924)
+2016-12-20 17:05:01 [1919] [INFO] Shutting down: Master
+2016-12-20 17:05:03 [13949] [INFO] Starting gunicorn 18.0
+2016-12-20 17:05:03 [13949] [INFO] Listening at: http://0.0.0.0:8081 (13949)
+2016-12-20 17:05:03 [13949] [INFO] Using worker: sync
+2016-12-20 17:05:03 [13954] [INFO] Booting worker with pid: 13954
+2016-12-20 17:05:03 [13955] [INFO] Booting worker with pid: 13955
+2016-12-20 17:05:03 [13956] [INFO] Booting worker with pid: 13956
+2016-12-20 17:05:03 [13972] [INFO] Booting worker with pid: 13972
+2016-12-20 17:06:02 [13949] [INFO] Handling signal: term
+2016-12-20 17:06:02 [13954] [INFO] Worker exiting (pid: 13954)
+2016-12-20 17:06:02 [13955] [INFO] Worker exiting (pid: 13955)
+2016-12-20 17:06:02 [13972] [INFO] Worker exiting (pid: 13972)
+2016-12-20 17:06:02 [13956] [INFO] Worker exiting (pid: 13956)
+2016-12-20 17:06:02 [13949] [INFO] Shutting down: Master
+2016-12-20 17:06:05 [14028] [INFO] Starting gunicorn 18.0
+2016-12-20 17:06:05 [14028] [INFO] Listening at: http://0.0.0.0:8081 (14028)
+2016-12-20 17:06:05 [14028] [INFO] Using worker: sync
+2016-12-20 17:06:05 [14033] [INFO] Booting worker with pid: 14033
+2016-12-20 17:06:05 [14038] [INFO] Booting worker with pid: 14038
+2016-12-20 17:06:05 [14044] [INFO] Booting worker with pid: 14044
+2016-12-20 17:06:05 [14045] [INFO] Booting worker with pid: 14045
+2016-12-20 17:07:33 [14028] [INFO] Handling signal: term
+2016-12-20 17:07:33 [14045] [INFO] Worker exiting (pid: 14045)
+2016-12-20 17:07:33 [14044] [INFO] Worker exiting (pid: 14044)
+2016-12-20 17:07:33 [14038] [INFO] Worker exiting (pid: 14038)
+2016-12-20 17:07:33 [14033] [INFO] Worker exiting (pid: 14033)
+2016-12-20 17:07:33 [14028] [INFO] Shutting down: Master
+2016-12-20 17:07:35 [14123] [INFO] Starting gunicorn 18.0
+2016-12-20 17:07:35 [14123] [INFO] Listening at: http://0.0.0.0:8081 (14123)
+2016-12-20 17:07:35 [14123] [INFO] Using worker: sync
+2016-12-20 17:07:35 [14129] [INFO] Booting worker with pid: 14129
+2016-12-20 17:07:35 [14130] [INFO] Booting worker with pid: 14130
+2016-12-20 17:07:35 [14141] [INFO] Booting worker with pid: 14141
+2016-12-20 17:07:35 [14142] [INFO] Booting worker with pid: 14142
+2016-12-21 09:35:24 [14123] [INFO] Handling signal: term
+2016-12-21 09:35:24 [14129] [INFO] Worker exiting (pid: 14129)
+2016-12-21 09:35:24 [14130] [INFO] Worker exiting (pid: 14130)
+2016-12-21 09:35:24 [14142] [INFO] Worker exiting (pid: 14142)
+2016-12-21 09:35:24 [14141] [INFO] Worker exiting (pid: 14141)
+2016-12-21 09:35:24 [14123] [INFO] Shutting down: Master
+2016-12-21 09:35:26 [17394] [INFO] Starting gunicorn 18.0
+2016-12-21 09:35:26 [17394] [INFO] Listening at: http://0.0.0.0:8081 (17394)
+2016-12-21 09:35:26 [17394] [INFO] Using worker: sync
+2016-12-21 09:35:26 [17400] [INFO] Booting worker with pid: 17400
+2016-12-21 09:35:26 [17401] [INFO] Booting worker with pid: 17401
+2016-12-21 09:35:26 [17407] [INFO] Booting worker with pid: 17407
+2016-12-21 09:35:26 [17417] [INFO] Booting worker with pid: 17417
+2016-12-21 09:36:32 [17394] [INFO] Handling signal: term
+2016-12-21 09:36:32 [17400] [INFO] Worker exiting (pid: 17400)
+2016-12-21 09:36:32 [17401] [INFO] Worker exiting (pid: 17401)
+2016-12-21 09:36:32 [17407] [INFO] Worker exiting (pid: 17407)
+2016-12-21 09:36:32 [17417] [INFO] Worker exiting (pid: 17417)
+2016-12-21 09:36:32 [17394] [INFO] Shutting down: Master
+2016-12-21 09:36:34 [17467] [INFO] Starting gunicorn 18.0
+2016-12-21 09:36:34 [17467] [INFO] Listening at: http://0.0.0.0:8081 (17467)
+2016-12-21 09:36:34 [17467] [INFO] Using worker: sync
+2016-12-21 09:36:34 [17473] [INFO] Booting worker with pid: 17473
+2016-12-21 09:36:34 [17480] [INFO] Booting worker with pid: 17480
+2016-12-21 09:36:34 [17481] [INFO] Booting worker with pid: 17481
+2016-12-21 09:36:34 [17491] [INFO] Booting worker with pid: 17491
+2016-12-21 10:32:19 [17467] [INFO] Handling signal: term
+2016-12-21 10:32:19 [17491] [INFO] Worker exiting (pid: 17491)
+2016-12-21 10:32:19 [17481] [INFO] Worker exiting (pid: 17481)
+2016-12-21 10:32:19 [17480] [INFO] Worker exiting (pid: 17480)
+2016-12-21 10:32:19 [17473] [INFO] Worker exiting (pid: 17473)
+2016-12-21 10:32:19 [17467] [INFO] Shutting down: Master
+2016-12-21 10:32:21 [18611] [INFO] Starting gunicorn 18.0
+2016-12-21 10:32:21 [18611] [INFO] Listening at: http://0.0.0.0:8081 (18611)
+2016-12-21 10:32:21 [18611] [INFO] Using worker: sync
+2016-12-21 10:32:21 [18617] [INFO] Booting worker with pid: 18617
+2016-12-21 10:32:21 [18618] [INFO] Booting worker with pid: 18618
+2016-12-21 10:32:21 [18629] [INFO] Booting worker with pid: 18629
+2016-12-21 10:32:21 [18632] [INFO] Booting worker with pid: 18632
+2016-12-21 10:35:12 [18611] [INFO] Handling signal: term
+2016-12-21 10:35:12 [18617] [INFO] Worker exiting (pid: 18617)
+2016-12-21 10:35:12 [18629] [INFO] Worker exiting (pid: 18629)
+2016-12-21 10:35:12 [18632] [INFO] Worker exiting (pid: 18632)
+2016-12-21 10:35:12 [18618] [INFO] Worker exiting (pid: 18618)
+2016-12-21 10:35:12 [18611] [INFO] Shutting down: Master
+2016-12-21 10:35:14 [18711] [INFO] Starting gunicorn 18.0
+2016-12-21 10:35:14 [18711] [INFO] Listening at: http://0.0.0.0:8081 (18711)
+2016-12-21 10:35:14 [18711] [INFO] Using worker: sync
+2016-12-21 10:35:14 [18716] [INFO] Booting worker with pid: 18716
+2016-12-21 10:35:14 [18717] [INFO] Booting worker with pid: 18717
+2016-12-21 10:35:14 [18719] [INFO] Booting worker with pid: 18719
+2016-12-21 10:35:15 [18726] [INFO] Booting worker with pid: 18726
+2016-12-21 10:36:45 [18711] [INFO] Handling signal: term
+2016-12-21 10:36:45 [18717] [INFO] Worker exiting (pid: 18717)
+2016-12-21 10:36:45 [18726] [INFO] Worker exiting (pid: 18726)
+2016-12-21 10:36:45 [18719] [INFO] Worker exiting (pid: 18719)
+2016-12-21 10:36:45 [18716] [INFO] Worker exiting (pid: 18716)
+2016-12-21 10:36:45 [18711] [INFO] Shutting down: Master
+2016-12-21 10:36:47 [18779] [INFO] Starting gunicorn 18.0
+2016-12-21 10:36:47 [18779] [INFO] Listening at: http://0.0.0.0:8081 (18779)
+2016-12-21 10:36:47 [18779] [INFO] Using worker: sync
+2016-12-21 10:36:47 [18785] [INFO] Booting worker with pid: 18785
+2016-12-21 10:36:47 [18788] [INFO] Booting worker with pid: 18788
+2016-12-21 10:36:48 [18796] [INFO] Booting worker with pid: 18796
+2016-12-21 10:36:48 [18797] [INFO] Booting worker with pid: 18797
+2016-12-21 10:37:28 [18779] [INFO] Handling signal: term
+2016-12-21 10:37:28 [18785] [INFO] Worker exiting (pid: 18785)
+2016-12-21 10:37:28 [18797] [INFO] Worker exiting (pid: 18797)
+2016-12-21 10:37:28 [18796] [INFO] Worker exiting (pid: 18796)
+2016-12-21 10:37:28 [18788] [INFO] Worker exiting (pid: 18788)
+2016-12-21 10:37:28 [18779] [INFO] Shutting down: Master
+2016-12-21 10:37:30 [18838] [INFO] Starting gunicorn 18.0
+2016-12-21 10:37:30 [18838] [INFO] Listening at: http://0.0.0.0:8081 (18838)
+2016-12-21 10:37:30 [18838] [INFO] Using worker: sync
+2016-12-21 10:37:30 [18844] [INFO] Booting worker with pid: 18844
+2016-12-21 10:37:30 [18850] [INFO] Booting worker with pid: 18850
+2016-12-21 10:37:30 [18851] [INFO] Booting worker with pid: 18851
+2016-12-21 10:37:30 [18862] [INFO] Booting worker with pid: 18862
+2016-12-21 10:38:46 [18838] [INFO] Handling signal: term
+2016-12-21 10:38:46 [18844] [INFO] Worker exiting (pid: 18844)
+2016-12-21 10:38:46 [18851] [INFO] Worker exiting (pid: 18851)
+2016-12-21 10:38:46 [18850] [INFO] Worker exiting (pid: 18850)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:38:46 [18862] [INFO] Worker exiting (pid: 18862)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:38:46 [18838] [INFO] Shutting down: Master
+2016-12-21 10:38:48 [18907] [INFO] Starting gunicorn 18.0
+2016-12-21 10:38:48 [18907] [INFO] Listening at: http://0.0.0.0:8081 (18907)
+2016-12-21 10:38:48 [18907] [INFO] Using worker: sync
+2016-12-21 10:38:48 [18913] [INFO] Booting worker with pid: 18913
+2016-12-21 10:38:48 [18914] [INFO] Booting worker with pid: 18914
+2016-12-21 10:38:48 [18915] [INFO] Booting worker with pid: 18915
+2016-12-21 10:38:48 [18916] [INFO] Booting worker with pid: 18916
+2016-12-21 10:39:35 [18907] [INFO] Handling signal: term
+2016-12-21 10:39:35 [18914] [INFO] Worker exiting (pid: 18914)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:39:35 [18913] [INFO] Worker exiting (pid: 18913)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:39:35 [18916] [INFO] Worker exiting (pid: 18916)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:39:35 [18915] [INFO] Worker exiting (pid: 18915)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+exception: append() takes exactly one argument (2 given)
+2016-12-21 10:39:35 [18907] [INFO] Shutting down: Master
+2016-12-21 10:39:37 [18968] [INFO] Starting gunicorn 18.0
+2016-12-21 10:39:37 [18968] [INFO] Listening at: http://0.0.0.0:8081 (18968)
+2016-12-21 10:39:37 [18968] [INFO] Using worker: sync
+2016-12-21 10:39:37 [18974] [INFO] Booting worker with pid: 18974
+2016-12-21 10:39:38 [18979] [INFO] Booting worker with pid: 18979
+2016-12-21 10:39:38 [18981] [INFO] Booting worker with pid: 18981
+2016-12-21 10:39:38 [18992] [INFO] Booting worker with pid: 18992
+2016-12-21 10:43:10 [18968] [INFO] Handling signal: term
+2016-12-21 10:43:10 [18974] [INFO] Worker exiting (pid: 18974)
+2016-12-21 10:43:10 [18992] [INFO] Worker exiting (pid: 18992)
+2016-12-21 10:43:10 [18979] [INFO] Worker exiting (pid: 18979)
+2016-12-21 10:43:10 [18981] [INFO] Worker exiting (pid: 18981)
+2016-12-21 10:43:10 [18968] [INFO] Shutting down: Master
+2016-12-21 10:43:12 [19080] [INFO] Starting gunicorn 18.0
+2016-12-21 10:43:12 [19080] [INFO] Listening at: http://0.0.0.0:8081 (19080)
+2016-12-21 10:43:12 [19080] [INFO] Using worker: sync
+2016-12-21 10:43:12 [19086] [INFO] Booting worker with pid: 19086
+2016-12-21 10:43:12 [19087] [INFO] Booting worker with pid: 19087
+2016-12-21 10:43:12 [19088] [INFO] Booting worker with pid: 19088
+2016-12-21 10:43:12 [19089] [INFO] Booting worker with pid: 19089
+2016-12-21 10:43:40 [19080] [INFO] Handling signal: term
+2016-12-21 10:43:40 [19088] [INFO] Worker exiting (pid: 19088)
+2016-12-21 10:43:40 [19086] [INFO] Worker exiting (pid: 19086)
+2016-12-21 10:43:40 [19087] [INFO] Worker exiting (pid: 19087)
+2016-12-21 10:43:40 [19089] [INFO] Worker exiting (pid: 19089)
+2016-12-21 10:43:41 [19080] [INFO] Shutting down: Master
+2016-12-21 10:43:43 [19131] [INFO] Starting gunicorn 18.0
+2016-12-21 10:43:43 [19131] [INFO] Listening at: http://0.0.0.0:8081 (19131)
+2016-12-21 10:43:43 [19131] [INFO] Using worker: sync
+2016-12-21 10:43:43 [19137] [INFO] Booting worker with pid: 19137
+2016-12-21 10:43:43 [19142] [INFO] Booting worker with pid: 19142
+2016-12-21 10:43:43 [19149] [INFO] Booting worker with pid: 19149
+2016-12-21 10:43:43 [19150] [INFO] Booting worker with pid: 19150
+2016-12-21 10:46:18 [19131] [INFO] Handling signal: term
+2016-12-21 10:46:18 [19150] [INFO] Worker exiting (pid: 19150)
+2016-12-21 10:46:18 [19149] [INFO] Worker exiting (pid: 19149)
+2016-12-21 10:46:18 [19142] [INFO] Worker exiting (pid: 19142)
+2016-12-21 10:46:18 [19137] [INFO] Worker exiting (pid: 19137)
+2016-12-21 10:46:18 [19131] [INFO] Shutting down: Master
+2016-12-21 10:46:20 [19226] [INFO] Starting gunicorn 18.0
+2016-12-21 10:46:20 [19226] [INFO] Listening at: http://0.0.0.0:8081 (19226)
+2016-12-21 10:46:20 [19226] [INFO] Using worker: sync
+2016-12-21 10:46:20 [19232] [INFO] Booting worker with pid: 19232
+2016-12-21 10:46:21 [19238] [INFO] Booting worker with pid: 19238
+2016-12-21 10:46:21 [19244] [INFO] Booting worker with pid: 19244
+2016-12-21 10:46:21 [19245] [INFO] Booting worker with pid: 19245
+2016-12-21 10:47:15 [19226] [INFO] Handling signal: term
+2016-12-21 10:47:15 [19238] [INFO] Worker exiting (pid: 19238)
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+2016-12-21 10:47:15 [19245] [INFO] Worker exiting (pid: 19245)
+2016-12-21 10:47:15 [19232] [INFO] Worker exiting (pid: 19232)
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+2016-12-21 10:47:15 [19244] [INFO] Worker exiting (pid: 19244)
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+exception: list index out of range
+2016-12-21 10:47:15 [19226] [INFO] Shutting down: Master
+2016-12-21 10:47:17 [19290] [INFO] Starting gunicorn 18.0
+2016-12-21 10:47:17 [19290] [INFO] Listening at: http://0.0.0.0:8081 (19290)
+2016-12-21 10:47:17 [19290] [INFO] Using worker: sync
+2016-12-21 10:47:17 [19295] [INFO] Booting worker with pid: 19295
+2016-12-21 10:47:17 [19301] [INFO] Booting worker with pid: 19301
+2016-12-21 10:47:17 [19302] [INFO] Booting worker with pid: 19302
+2016-12-21 10:47:17 [19313] [INFO] Booting worker with pid: 19313
+2016-12-21 10:49:04 [19290] [INFO] Handling signal: term
+2016-12-21 10:49:04 [19295] [INFO] Worker exiting (pid: 19295)
+2016-12-21 10:49:04 [19301] [INFO] Worker exiting (pid: 19301)
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+2016-12-21 10:49:04 [19302] [INFO] Worker exiting (pid: 19302)
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+2016-12-21 10:49:04 [19313] [INFO] Worker exiting (pid: 19313)
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+exception: 'float' object has no attribute '__getitem__'
+2016-12-21 10:49:04 [19290] [INFO] Shutting down: Master
+2016-12-21 10:49:06 [19368] [INFO] Starting gunicorn 18.0
+2016-12-21 10:49:06 [19368] [INFO] Listening at: http://0.0.0.0:8081 (19368)
+2016-12-21 10:49:06 [19368] [INFO] Using worker: sync
+2016-12-21 10:49:06 [19374] [INFO] Booting worker with pid: 19374
+2016-12-21 10:49:06 [19375] [INFO] Booting worker with pid: 19375
+2016-12-21 10:49:06 [19385] [INFO] Booting worker with pid: 19385
+2016-12-21 10:49:06 [19388] [INFO] Booting worker with pid: 19388
+2016-12-21 10:50:52 [19368] [INFO] Handling signal: term
+2016-12-21 10:50:52 [19374] [INFO] Worker exiting (pid: 19374)
+2016-12-21 10:50:52 [19385] [INFO] Worker exiting (pid: 19385)
+2016-12-21 10:50:52 [19375] [INFO] Worker exiting (pid: 19375)
+2016-12-21 10:50:52 [19388] [INFO] Worker exiting (pid: 19388)
+2016-12-21 10:50:53 [19368] [INFO] Shutting down: Master
+2016-12-21 10:50:54 [19452] [INFO] Starting gunicorn 18.0
+2016-12-21 10:50:54 [19452] [INFO] Listening at: http://0.0.0.0:8081 (19452)
+2016-12-21 10:50:54 [19452] [INFO] Using worker: sync
+2016-12-21 10:50:54 [19457] [INFO] Booting worker with pid: 19457
+2016-12-21 10:50:55 [19458] [INFO] Booting worker with pid: 19458
+2016-12-21 10:50:55 [19468] [INFO] Booting worker with pid: 19468
+2016-12-21 10:50:55 [19470] [INFO] Booting worker with pid: 19470
+2016-12-21 10:53:33 [19452] [INFO] Handling signal: term
+2016-12-21 10:53:33 [19457] [INFO] Worker exiting (pid: 19457)
+2016-12-21 10:53:33 [19458] [INFO] Worker exiting (pid: 19458)
+2016-12-21 10:53:33 [19468] [INFO] Worker exiting (pid: 19468)
+2016-12-21 10:53:33 [19470] [INFO] Worker exiting (pid: 19470)
+2016-12-21 10:53:33 [19452] [INFO] Shutting down: Master
+2016-12-21 10:53:35 [19551] [INFO] Starting gunicorn 18.0
+2016-12-21 10:53:35 [19551] [INFO] Listening at: http://0.0.0.0:8081 (19551)
+2016-12-21 10:53:35 [19551] [INFO] Using worker: sync
+2016-12-21 10:53:35 [19557] [INFO] Booting worker with pid: 19557
+2016-12-21 10:53:35 [19563] [INFO] Booting worker with pid: 19563
+2016-12-21 10:53:35 [19569] [INFO] Booting worker with pid: 19569
+2016-12-21 10:53:35 [19570] [INFO] Booting worker with pid: 19570
+2016-12-21 10:56:40 [19551] [INFO] Handling signal: term
+2016-12-21 10:56:40 [19563] [INFO] Worker exiting (pid: 19563)
+2016-12-21 10:56:40 [19570] [INFO] Worker exiting (pid: 19570)
+2016-12-21 10:56:40 [19557] [INFO] Worker exiting (pid: 19557)
+2016-12-21 10:56:40 [19569] [INFO] Worker exiting (pid: 19569)
+2016-12-21 10:56:40 [19551] [INFO] Shutting down: Master
+2016-12-21 10:56:42 [19655] [INFO] Starting gunicorn 18.0
+2016-12-21 10:56:42 [19655] [INFO] Listening at: http://0.0.0.0:8081 (19655)
+2016-12-21 10:56:42 [19655] [INFO] Using worker: sync
+2016-12-21 10:56:42 [19661] [INFO] Booting worker with pid: 19661
+2016-12-21 10:56:42 [19667] [INFO] Booting worker with pid: 19667
+2016-12-21 10:56:42 [19673] [INFO] Booting worker with pid: 19673
+2016-12-21 10:56:42 [19678] [INFO] Booting worker with pid: 19678
+2016-12-21 10:58:31 [19655] [INFO] Handling signal: term
+2016-12-21 10:58:31 [19667] [INFO] Worker exiting (pid: 19667)
+2016-12-21 10:58:31 [19673] [INFO] Worker exiting (pid: 19673)
+2016-12-21 10:58:31 [19661] [INFO] Worker exiting (pid: 19661)
+2016-12-21 10:58:31 [19678] [INFO] Worker exiting (pid: 19678)
+2016-12-21 10:58:31 [19655] [INFO] Shutting down: Master
+2016-12-21 10:58:33 [19735] [INFO] Starting gunicorn 18.0
+2016-12-21 10:58:33 [19735] [INFO] Listening at: http://0.0.0.0:8081 (19735)
+2016-12-21 10:58:33 [19735] [INFO] Using worker: sync
+2016-12-21 10:58:33 [19741] [INFO] Booting worker with pid: 19741
+2016-12-21 10:58:33 [19746] [INFO] Booting worker with pid: 19746
+2016-12-21 10:58:33 [19748] [INFO] Booting worker with pid: 19748
+2016-12-21 10:58:33 [19754] [INFO] Booting worker with pid: 19754
+2016-12-21 11:00:30 [19735] [INFO] Handling signal: term
+2016-12-21 11:00:30 [19754] [INFO] Worker exiting (pid: 19754)
+2016-12-21 11:00:30 [19741] [INFO] Worker exiting (pid: 19741)
+2016-12-21 11:00:30 [19748] [INFO] Worker exiting (pid: 19748)
+2016-12-21 11:00:30 [19746] [INFO] Worker exiting (pid: 19746)
+2016-12-21 11:00:31 [19735] [INFO] Shutting down: Master
+2016-12-21 11:00:33 [19819] [INFO] Starting gunicorn 18.0
+2016-12-21 11:00:33 [19819] [INFO] Listening at: http://0.0.0.0:8081 (19819)
+2016-12-21 11:00:33 [19819] [INFO] Using worker: sync
+2016-12-21 11:00:33 [19825] [INFO] Booting worker with pid: 19825
+2016-12-21 11:00:33 [19831] [INFO] Booting worker with pid: 19831
+2016-12-21 11:00:33 [19836] [INFO] Booting worker with pid: 19836
+2016-12-21 11:00:33 [19838] [INFO] Booting worker with pid: 19838
+2016-12-21 11:06:35 [19819] [INFO] Handling signal: term
+2016-12-21 11:06:35 [19836] [INFO] Worker exiting (pid: 19836)
+2016-12-21 11:06:35 [19838] [INFO] Worker exiting (pid: 19838)
+2016-12-21 11:06:35 [19825] [INFO] Worker exiting (pid: 19825)
+2016-12-21 11:06:35 [19831] [INFO] Worker exiting (pid: 19831)
+2016-12-21 11:06:35 [19819] [INFO] Shutting down: Master
+2016-12-21 11:06:37 [20016] [INFO] Starting gunicorn 18.0
+2016-12-21 11:06:37 [20016] [INFO] Listening at: http://0.0.0.0:8081 (20016)
+2016-12-21 11:06:37 [20016] [INFO] Using worker: sync
+2016-12-21 11:06:37 [20021] [INFO] Booting worker with pid: 20021
+2016-12-21 11:06:37 [20027] [INFO] Booting worker with pid: 20027
+2016-12-21 11:06:37 [20028] [INFO] Booting worker with pid: 20028
+2016-12-21 11:06:38 [20029] [INFO] Booting worker with pid: 20029
+2016-12-21 11:14:34 [20016] [INFO] Handling signal: term
+2016-12-21 11:14:34 [20028] [INFO] Worker exiting (pid: 20028)
+2016-12-21 11:14:34 [20027] [INFO] Worker exiting (pid: 20027)
+2016-12-21 11:14:34 [20029] [INFO] Worker exiting (pid: 20029)
+2016-12-21 11:14:34 [20021] [INFO] Worker exiting (pid: 20021)
+2016-12-21 11:14:34 [20016] [INFO] Shutting down: Master
+2016-12-21 11:14:36 [20206] [INFO] Starting gunicorn 18.0
+2016-12-21 11:14:36 [20206] [INFO] Listening at: http://0.0.0.0:8081 (20206)
+2016-12-21 11:14:36 [20206] [INFO] Using worker: sync
+2016-12-21 11:14:36 [20212] [INFO] Booting worker with pid: 20212
+2016-12-21 11:14:36 [20218] [INFO] Booting worker with pid: 20218
+2016-12-21 11:14:36 [20219] [INFO] Booting worker with pid: 20219
+2016-12-21 11:14:36 [20220] [INFO] Booting worker with pid: 20220
+2016-12-21 11:24:54 [20206] [INFO] Handling signal: term
+2016-12-21 11:24:54 [20212] [INFO] Worker exiting (pid: 20212)
+2016-12-21 11:24:54 [20220] [INFO] Worker exiting (pid: 20220)
+2016-12-21 11:24:54 [20219] [INFO] Worker exiting (pid: 20219)
+2016-12-21 11:24:54 [20218] [INFO] Worker exiting (pid: 20218)
+2016-12-21 11:24:54 [20206] [INFO] Shutting down: Master
+2016-12-21 11:24:56 [20435] [INFO] Starting gunicorn 18.0
+2016-12-21 11:24:56 [20435] [INFO] Listening at: http://0.0.0.0:8081 (20435)
+2016-12-21 11:24:56 [20435] [INFO] Using worker: sync
+2016-12-21 11:24:56 [20441] [INFO] Booting worker with pid: 20441
+2016-12-21 11:24:56 [20446] [INFO] Booting worker with pid: 20446
+2016-12-21 11:24:56 [20448] [INFO] Booting worker with pid: 20448
+2016-12-21 11:24:56 [20459] [INFO] Booting worker with pid: 20459
+2016-12-21 11:26:27 [20435] [INFO] Handling signal: term
+2016-12-21 11:26:27 [20446] [INFO] Worker exiting (pid: 20446)
+2016-12-21 11:26:27 [20459] [INFO] Worker exiting (pid: 20459)
+2016-12-21 11:26:27 [20441] [INFO] Worker exiting (pid: 20441)
+2016-12-21 11:26:27 [20448] [INFO] Worker exiting (pid: 20448)
+2016-12-21 11:26:27 [20435] [INFO] Shutting down: Master
+2016-12-21 11:26:29 [20512] [INFO] Starting gunicorn 18.0
+2016-12-21 11:26:29 [20512] [INFO] Listening at: http://0.0.0.0:8081 (20512)
+2016-12-21 11:26:29 [20512] [INFO] Using worker: sync
+2016-12-21 11:26:29 [20517] [INFO] Booting worker with pid: 20517
+2016-12-21 11:26:29 [20518] [INFO] Booting worker with pid: 20518
+2016-12-21 11:26:29 [20529] [INFO] Booting worker with pid: 20529
+2016-12-21 11:26:29 [20535] [INFO] Booting worker with pid: 20535
+2016-12-21 14:26:17 [20512] [INFO] Handling signal: term
+2016-12-21 14:26:17 [20529] [INFO] Worker exiting (pid: 20529)
+2016-12-21 14:26:17 [20535] [INFO] Worker exiting (pid: 20535)
+2016-12-21 14:26:17 [20517] [INFO] Worker exiting (pid: 20517)
+2016-12-21 14:26:17 [20518] [INFO] Worker exiting (pid: 20518)
+2016-12-21 14:26:17 [20512] [INFO] Shutting down: Master
+2016-12-21 14:26:20 [24538] [INFO] Starting gunicorn 18.0
+2016-12-21 14:26:20 [24538] [INFO] Listening at: http://0.0.0.0:8081 (24538)
+2016-12-21 14:26:20 [24538] [INFO] Using worker: sync
+2016-12-21 14:26:20 [24544] [INFO] Booting worker with pid: 24544
+2016-12-21 14:26:20 [24545] [INFO] Booting worker with pid: 24545
+2016-12-21 14:26:20 [24551] [INFO] Booting worker with pid: 24551
+2016-12-21 14:26:20 [24562] [INFO] Booting worker with pid: 24562
+2016-12-21 14:33:56 [24538] [INFO] Handling signal: term
+2016-12-21 14:33:56 [24551] [INFO] Worker exiting (pid: 24551)
+2016-12-21 14:33:56 [24544] [INFO] Worker exiting (pid: 24544)
+2016-12-21 14:33:56 [24562] [INFO] Worker exiting (pid: 24562)
+2016-12-21 14:33:56 [24545] [INFO] Worker exiting (pid: 24545)
+2016-12-21 14:33:56 [24538] [INFO] Shutting down: Master
+2016-12-21 14:33:59 [24776] [INFO] Starting gunicorn 18.0
+2016-12-21 14:33:59 [24776] [INFO] Listening at: http://0.0.0.0:8081 (24776)
+2016-12-21 14:33:59 [24776] [INFO] Using worker: sync
+2016-12-21 14:33:59 [24781] [INFO] Booting worker with pid: 24781
+2016-12-21 14:33:59 [24787] [INFO] Booting worker with pid: 24787
+2016-12-21 14:33:59 [24788] [INFO] Booting worker with pid: 24788
+2016-12-21 14:33:59 [24797] [INFO] Booting worker with pid: 24797
+2016-12-21 14:52:28 [24776] [INFO] Handling signal: term
+2016-12-21 14:52:28 [24788] [INFO] Worker exiting (pid: 24788)
+2016-12-21 14:52:28 [24787] [INFO] Worker exiting (pid: 24787)
+2016-12-21 14:52:28 [24797] [INFO] Worker exiting (pid: 24797)
+2016-12-21 14:52:28 [24781] [INFO] Worker exiting (pid: 24781)
+2016-12-21 14:52:28 [24776] [INFO] Shutting down: Master
+2016-12-21 14:52:30 [25294] [INFO] Starting gunicorn 18.0
+2016-12-21 14:52:30 [25294] [INFO] Listening at: http://0.0.0.0:8081 (25294)
+2016-12-21 14:52:30 [25294] [INFO] Using worker: sync
+2016-12-21 14:52:30 [25300] [INFO] Booting worker with pid: 25300
+2016-12-21 14:52:30 [25305] [INFO] Booting worker with pid: 25305
+2016-12-21 14:52:30 [25312] [INFO] Booting worker with pid: 25312
+2016-12-21 14:52:30 [25317] [INFO] Booting worker with pid: 25317
+2016-12-21 14:58:59 [25294] [INFO] Handling signal: term
+2016-12-21 14:58:59 [25305] [INFO] Worker exiting (pid: 25305)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 14:58:59 [25312] [INFO] Worker exiting (pid: 25312)
+2016-12-21 14:58:59 [25317] [INFO] Worker exiting (pid: 25317)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: object of type 'float' has no len()
+exception: object of type 'float' has no len()
+2016-12-21 14:58:59 [25300] [INFO] Worker exiting (pid: 25300)
+exception: global name 'serice' is not defined
+2016-12-21 14:58:59 [25294] [INFO] Shutting down: Master
+2016-12-21 14:59:01 [25533] [INFO] Starting gunicorn 18.0
+2016-12-21 14:59:01 [25533] [INFO] Listening at: http://0.0.0.0:8081 (25533)
+2016-12-21 14:59:01 [25533] [INFO] Using worker: sync
+2016-12-21 14:59:01 [25539] [INFO] Booting worker with pid: 25539
+2016-12-21 14:59:01 [25544] [INFO] Booting worker with pid: 25544
+2016-12-21 14:59:01 [25550] [INFO] Booting worker with pid: 25550
+2016-12-21 14:59:01 [25555] [INFO] Booting worker with pid: 25555
+2016-12-21 15:11:30 [25533] [INFO] Handling signal: term
+2016-12-21 15:11:30 [25539] [INFO] Worker exiting (pid: 25539)
+2016-12-21 15:11:30 [25544] [INFO] Worker exiting (pid: 25544)
+2016-12-21 15:11:30 [25555] [INFO] Worker exiting (pid: 25555)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:11:30 [25550] [INFO] Worker exiting (pid: 25550)
+exception: object of type 'float' has no len()
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:11:30 [25533] [INFO] Shutting down: Master
+2016-12-21 15:11:32 [25924] [INFO] Starting gunicorn 18.0
+2016-12-21 15:11:32 [25924] [INFO] Listening at: http://0.0.0.0:8081 (25924)
+2016-12-21 15:11:32 [25924] [INFO] Using worker: sync
+2016-12-21 15:11:32 [25930] [INFO] Booting worker with pid: 25930
+2016-12-21 15:11:32 [25931] [INFO] Booting worker with pid: 25931
+2016-12-21 15:11:32 [25942] [INFO] Booting worker with pid: 25942
+2016-12-21 15:11:32 [25948] [INFO] Booting worker with pid: 25948
+2016-12-21 15:12:37 [25924] [INFO] Handling signal: term
+2016-12-21 15:12:37 [25931] [INFO] Worker exiting (pid: 25931)
+2016-12-21 15:12:37 [25948] [INFO] Worker exiting (pid: 25948)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:12:37 [25942] [INFO] Worker exiting (pid: 25942)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:12:37 [25930] [INFO] Worker exiting (pid: 25930)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:12:37 [25924] [INFO] Shutting down: Master
+2016-12-21 15:12:39 [25997] [INFO] Starting gunicorn 18.0
+2016-12-21 15:12:39 [25997] [INFO] Listening at: http://0.0.0.0:8081 (25997)
+2016-12-21 15:12:39 [25997] [INFO] Using worker: sync
+2016-12-21 15:12:39 [26003] [INFO] Booting worker with pid: 26003
+2016-12-21 15:12:39 [26008] [INFO] Booting worker with pid: 26008
+2016-12-21 15:12:39 [26009] [INFO] Booting worker with pid: 26009
+2016-12-21 15:12:39 [26011] [INFO] Booting worker with pid: 26011
+2016-12-21 15:13:03 [25997] [INFO] Handling signal: term
+2016-12-21 15:13:03 [26003] [INFO] Worker exiting (pid: 26003)
+2016-12-21 15:13:03 [26011] [INFO] Worker exiting (pid: 26011)
+2016-12-21 15:13:03 [26008] [INFO] Worker exiting (pid: 26008)
+2016-12-21 15:13:03 [26009] [INFO] Worker exiting (pid: 26009)
+2016-12-21 15:13:03 [25997] [INFO] Shutting down: Master
+2016-12-21 15:13:05 [26059] [INFO] Starting gunicorn 18.0
+2016-12-21 15:13:05 [26059] [INFO] Listening at: http://0.0.0.0:8081 (26059)
+2016-12-21 15:13:05 [26059] [INFO] Using worker: sync
+2016-12-21 15:13:05 [26064] [INFO] Booting worker with pid: 26064
+2016-12-21 15:13:05 [26066] [INFO] Booting worker with pid: 26066
+2016-12-21 15:13:05 [26065] [INFO] Booting worker with pid: 26065
+2016-12-21 15:13:05 [26067] [INFO] Booting worker with pid: 26067
+2016-12-21 15:13:35 [26059] [INFO] Handling signal: term
+2016-12-21 15:13:35 [26066] [INFO] Worker exiting (pid: 26066)
+2016-12-21 15:13:35 [26064] [INFO] Worker exiting (pid: 26064)
+2016-12-21 15:13:35 [26065] [INFO] Worker exiting (pid: 26065)
+2016-12-21 15:13:35 [26067] [INFO] Worker exiting (pid: 26067)
+2016-12-21 15:13:35 [26059] [INFO] Shutting down: Master
+2016-12-21 15:13:37 [26113] [INFO] Starting gunicorn 18.0
+2016-12-21 15:13:37 [26113] [INFO] Listening at: http://0.0.0.0:8081 (26113)
+2016-12-21 15:13:37 [26113] [INFO] Using worker: sync
+2016-12-21 15:13:37 [26119] [INFO] Booting worker with pid: 26119
+2016-12-21 15:13:37 [26120] [INFO] Booting worker with pid: 26120
+2016-12-21 15:13:37 [26131] [INFO] Booting worker with pid: 26131
+2016-12-21 15:13:37 [26137] [INFO] Booting worker with pid: 26137
+2016-12-21 15:14:47 [26113] [INFO] Handling signal: term
+2016-12-21 15:14:47 [26120] [INFO] Worker exiting (pid: 26120)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:14:47 [26137] [INFO] Worker exiting (pid: 26137)
+2016-12-21 15:14:47 [26119] [INFO] Worker exiting (pid: 26119)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:14:47 [26131] [INFO] Worker exiting (pid: 26131)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:14:47 [26113] [INFO] Shutting down: Master
+2016-12-21 15:14:50 [26187] [INFO] Starting gunicorn 18.0
+2016-12-21 15:14:50 [26187] [INFO] Listening at: http://0.0.0.0:8081 (26187)
+2016-12-21 15:14:50 [26187] [INFO] Using worker: sync
+2016-12-21 15:14:50 [26192] [INFO] Booting worker with pid: 26192
+2016-12-21 15:14:50 [26198] [INFO] Booting worker with pid: 26198
+2016-12-21 15:14:50 [26199] [INFO] Booting worker with pid: 26199
+2016-12-21 15:14:50 [26210] [INFO] Booting worker with pid: 26210
+2016-12-21 15:15:54 [26187] [INFO] Handling signal: term
+2016-12-21 15:15:54 [26199] [INFO] Worker exiting (pid: 26199)
+2016-12-21 15:15:54 [26198] [INFO] Worker exiting (pid: 26198)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:15:54 [26192] [INFO] Worker exiting (pid: 26192)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:15:54 [26210] [INFO] Worker exiting (pid: 26210)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:15:54 [26187] [INFO] Shutting down: Master
+2016-12-21 15:15:56 [26259] [INFO] Starting gunicorn 18.0
+2016-12-21 15:15:56 [26259] [INFO] Listening at: http://0.0.0.0:8081 (26259)
+2016-12-21 15:15:56 [26259] [INFO] Using worker: sync
+2016-12-21 15:15:56 [26265] [INFO] Booting worker with pid: 26265
+2016-12-21 15:15:56 [26270] [INFO] Booting worker with pid: 26270
+2016-12-21 15:15:56 [26272] [INFO] Booting worker with pid: 26272
+2016-12-21 15:15:56 [26283] [INFO] Booting worker with pid: 26283
+2016-12-21 15:16:17 [26259] [INFO] Handling signal: term
+2016-12-21 15:16:17 [26270] [INFO] Worker exiting (pid: 26270)
+2016-12-21 15:16:17 [26272] [INFO] Worker exiting (pid: 26272)
+2016-12-21 15:16:17 [26283] [INFO] Worker exiting (pid: 26283)
+2016-12-21 15:16:17 [26265] [INFO] Worker exiting (pid: 26265)
+2016-12-21 15:16:17 [26259] [INFO] Shutting down: Master
+2016-12-21 15:16:19 [26317] [INFO] Starting gunicorn 18.0
+2016-12-21 15:16:19 [26317] [INFO] Listening at: http://0.0.0.0:8081 (26317)
+2016-12-21 15:16:19 [26317] [INFO] Using worker: sync
+2016-12-21 15:16:19 [26322] [INFO] Booting worker with pid: 26322
+2016-12-21 15:16:19 [26323] [INFO] Booting worker with pid: 26323
+2016-12-21 15:16:19 [26333] [INFO] Booting worker with pid: 26333
+2016-12-21 15:16:19 [26340] [INFO] Booting worker with pid: 26340
+2016-12-21 15:16:44 [26317] [INFO] Handling signal: term
+2016-12-21 15:16:44 [26323] [INFO] Worker exiting (pid: 26323)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:16:44 [26322] [INFO] Worker exiting (pid: 26322)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:16:44 [26333] [INFO] Worker exiting (pid: 26333)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:16:44 [26340] [INFO] Worker exiting (pid: 26340)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:16:44 [26317] [INFO] Shutting down: Master
+2016-12-21 15:16:46 [26372] [INFO] Starting gunicorn 18.0
+2016-12-21 15:16:46 [26372] [INFO] Listening at: http://0.0.0.0:8081 (26372)
+2016-12-21 15:16:46 [26372] [INFO] Using worker: sync
+2016-12-21 15:16:46 [26377] [INFO] Booting worker with pid: 26377
+2016-12-21 15:16:46 [26383] [INFO] Booting worker with pid: 26383
+2016-12-21 15:16:46 [26384] [INFO] Booting worker with pid: 26384
+2016-12-21 15:16:46 [26389] [INFO] Booting worker with pid: 26389
+2016-12-21 15:36:23 [26372] [INFO] Handling signal: term
+2016-12-21 15:36:23 [26389] [INFO] Worker exiting (pid: 26389)
+2016-12-21 15:36:23 [26383] [INFO] Worker exiting (pid: 26383)
+2016-12-21 15:36:23 [26377] [INFO] Worker exiting (pid: 26377)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:36:23 [26384] [INFO] Worker exiting (pid: 26384)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 15:36:23 [26372] [INFO] Shutting down: Master
+2016-12-21 15:36:25 [26960] [INFO] Starting gunicorn 18.0
+2016-12-21 15:36:25 [26960] [INFO] Listening at: http://0.0.0.0:8081 (26960)
+2016-12-21 15:36:25 [26960] [INFO] Using worker: sync
+2016-12-21 15:36:25 [26965] [INFO] Booting worker with pid: 26965
+2016-12-21 15:36:25 [26966] [INFO] Booting worker with pid: 26966
+2016-12-21 15:36:25 [26968] [INFO] Booting worker with pid: 26968
+2016-12-21 15:36:25 [26982] [INFO] Booting worker with pid: 26982
+2016-12-21 15:37:05 [26960] [INFO] Handling signal: term
+2016-12-21 15:37:05 [26982] [INFO] Worker exiting (pid: 26982)
+2016-12-21 15:37:05 [26968] [INFO] Worker exiting (pid: 26968)
+2016-12-21 15:37:05 [26966] [INFO] Worker exiting (pid: 26966)
+2016-12-21 15:37:05 [26965] [INFO] Worker exiting (pid: 26965)
+2016-12-21 15:37:05 [26960] [INFO] Shutting down: Master
+2016-12-21 15:37:07 [27022] [INFO] Starting gunicorn 18.0
+2016-12-21 15:37:07 [27022] [INFO] Listening at: http://0.0.0.0:8081 (27022)
+2016-12-21 15:37:07 [27022] [INFO] Using worker: sync
+2016-12-21 15:37:07 [27028] [INFO] Booting worker with pid: 27028
+2016-12-21 15:37:07 [27033] [INFO] Booting worker with pid: 27033
+2016-12-21 15:37:07 [27041] [INFO] Booting worker with pid: 27041
+2016-12-21 15:37:07 [27043] [INFO] Booting worker with pid: 27043
+2016-12-21 15:43:19 [27022] [INFO] Handling signal: term
+2016-12-21 15:43:19 [27041] [INFO] Worker exiting (pid: 27041)
+2016-12-21 15:43:19 [27033] [INFO] Worker exiting (pid: 27033)
+2016-12-21 15:43:19 [27028] [INFO] Worker exiting (pid: 27028)
+2016-12-21 15:43:19 [27043] [INFO] Worker exiting (pid: 27043)
+2016-12-21 15:43:19 [27022] [INFO] Shutting down: Master
+2016-12-21 15:43:21 [27225] [INFO] Starting gunicorn 18.0
+2016-12-21 15:43:21 [27225] [INFO] Listening at: http://0.0.0.0:8081 (27225)
+2016-12-21 15:43:21 [27225] [INFO] Using worker: sync
+2016-12-21 15:43:21 [27231] [INFO] Booting worker with pid: 27231
+2016-12-21 15:43:21 [27237] [INFO] Booting worker with pid: 27237
+2016-12-21 15:43:21 [27243] [INFO] Booting worker with pid: 27243
+2016-12-21 15:43:21 [27244] [INFO] Booting worker with pid: 27244
+2016-12-21 15:44:19 [27225] [INFO] Handling signal: term
+2016-12-21 15:44:19 [27243] [INFO] Worker exiting (pid: 27243)
+2016-12-21 15:44:19 [27231] [INFO] Worker exiting (pid: 27231)
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+2016-12-21 15:44:19 [27237] [INFO] Worker exiting (pid: 27237)
+exception: '_AppCtxGlobals' object has no attribute 'sumbbbb'
+2016-12-21 15:44:19 [27244] [INFO] Worker exiting (pid: 27244)
+2016-12-21 15:44:19 [27225] [INFO] Shutting down: Master
+2016-12-21 15:44:21 [27295] [INFO] Starting gunicorn 18.0
+2016-12-21 15:44:21 [27295] [INFO] Listening at: http://0.0.0.0:8081 (27295)
+2016-12-21 15:44:21 [27295] [INFO] Using worker: sync
+2016-12-21 15:44:21 [27300] [INFO] Booting worker with pid: 27300
+2016-12-21 15:44:22 [27306] [INFO] Booting worker with pid: 27306
+2016-12-21 15:44:22 [27309] [INFO] Booting worker with pid: 27309
+2016-12-21 15:44:22 [27313] [INFO] Booting worker with pid: 27313
+2016-12-21 15:54:06 [27295] [INFO] Handling signal: term
+2016-12-21 15:54:06 [27300] [INFO] Worker exiting (pid: 27300)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:06 [27313] [INFO] Worker exiting (pid: 27313)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:06 [27309] [INFO] Worker exiting (pid: 27309)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:06 [27306] [INFO] Worker exiting (pid: 27306)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:06 [27295] [INFO] Shutting down: Master
+2016-12-21 15:54:08 [27590] [INFO] Starting gunicorn 18.0
+2016-12-21 15:54:08 [27590] [INFO] Listening at: http://0.0.0.0:8081 (27590)
+2016-12-21 15:54:08 [27590] [INFO] Using worker: sync
+2016-12-21 15:54:09 [27596] [INFO] Booting worker with pid: 27596
+2016-12-21 15:54:09 [27601] [INFO] Booting worker with pid: 27601
+2016-12-21 15:54:09 [27602] [INFO] Booting worker with pid: 27602
+2016-12-21 15:54:09 [27604] [INFO] Booting worker with pid: 27604
+2016-12-21 15:54:57 [27590] [INFO] Handling signal: term
+2016-12-21 15:54:57 [27602] [INFO] Worker exiting (pid: 27602)
+2016-12-21 15:54:57 [27601] [INFO] Worker exiting (pid: 27601)
+2016-12-21 15:54:57 [27604] [INFO] Worker exiting (pid: 27604)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:57 [27596] [INFO] Worker exiting (pid: 27596)
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+exception: global name 'serice' is not defined
+2016-12-21 15:54:57 [27590] [INFO] Shutting down: Master
+2016-12-21 15:54:59 [27660] [INFO] Starting gunicorn 18.0
+2016-12-21 15:54:59 [27660] [INFO] Listening at: http://0.0.0.0:8081 (27660)
+2016-12-21 15:54:59 [27660] [INFO] Using worker: sync
+2016-12-21 15:54:59 [27666] [INFO] Booting worker with pid: 27666
+2016-12-21 15:54:59 [27667] [INFO] Booting worker with pid: 27667
+2016-12-21 15:54:59 [27677] [INFO] Booting worker with pid: 27677
+2016-12-21 15:55:00 [27684] [INFO] Booting worker with pid: 27684
+[(1482303360000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273), (1482306600000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273), (1482306600000, 26424386.327273), (1482306660000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273), (1482306600000, 26424386.327273), (1482306660000, 26424386.327273), (1482306720000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.32727[(1482303360000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455), (1482306600000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455), (1482306600000, 7657126.545455), (1482306660000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455), (1482306600000, 7657126.545455), (1482306660000, 7657126.545455), (1482306720000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.545455), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455), (1482306600000, 7657126.545455), (1482306660000, 7657126.545455), (1482306720000, 7657126.545455), (1482306780000, 7657126.545455)]
+[(1482303360000, 7657126.545455), (1482303420000, 7657126.545455), (1482303480000, 7657126.545455), (1482303540000, 7657126.545455), (1482303600000, 7657126.545455), (1482303660000, 7657126.545455), (1482303720000, 7657126.545455), (1482303780000, 7657126.545455), (1482303840000, 7657126.545455), (1482303900000, 7657126.545455), (1482303960000, 7657126.545455), (1482304020000, 7657126.545455), (1482304080000, 7657126.545455), (1482304140000, 7657126.545455), (1482304200000, 7657126.545455), (1482304260000, 7657126.545455), (1482304320000, 7657126.545455), (1482304380000, 7657126.545455), (1482304440000, 7657126.545455), (1482304500000, 7657126.545455), (1482304560000, 7657126.545455), (1482304620000, 7657126.545455), (1482304680000, 7657126.545455), (1482304740000, 7657126.545455), (1482304800000, 7657126.5454552016-12-21 15:55:54 [27660] [INFO] Handling signal: term
+2016-12-21 15:55:54 [27667] [INFO] Worker exiting (pid: 27667)
+2016-12-21 15:55:54 [27684] [INFO] Worker exiting (pid: 27684)
+2016-12-21 15:55:54 [27666] [INFO] Worker exiting (pid: 27666)
+3), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273), (1482306600000, 26424386.327273), (1482306660000, 26424386.327273), (1482306720000, 26424386.327273), (1482306780000, 26424386.327273)]
+[(1482303360000, 26424386.327273), (1482303420000, 26424386.327273), (1482303480000, 26424386.327273), (1482303540000, 26424386.327273), (1482303600000, 26424386.327273), (1482303660000, 26424386.327273), (1482303720000, 26424386.327273), (1482303780000, 26424386.327273), (1482303840000, 26424386.327273), (1482303900000, 26424386.327273), (1482303960000, 26424386.327273), (1482304020000, 26424386.327273), (1482304080000, 26424386.327273), (1482304140000, 26424386.327273), (1482304200000, 26424386.327273), (1482304260000, 26424386.327273), (1482304320000, 26424386.327273), (1482304380000, 26424386.327273), (1482304440000, 26424386.327273), (1482304500000, 26424386.327273), (1482304560000, 26424386.327273), (1482304620000, 26424386.327273), (1482304680000, 26424386.327273), (1482304740000, 26424386.327273), (1482304800000, 26424386.327273), (1482304860000, 26424386.327273), (1482304920000, 26424386.327273), (1482304980000, 26424386.327273), (1482305040000, 26424386.327273), (1482305100000, 26424386.327273), (1482305160000, 26424386.327273), (1482305220000, 26424386.327273), (1482305280000, 26424386.327273), (1482305340000, 26424386.327273), (1482305400000, 26424386.327273), (1482305460000, 26424386.327273), (1482305520000, 26424386.327273), (1482305580000, 26424386.327273), (1482305640000, 26424386.327273), (1482305700000, 26424386.327273), (1482305760000, 26424386.327273), (1482305820000, 26424386.327273), (1482305880000, 26424386.327273), (1482305940000, 26424386.327273), (1482306000000, 26424386.327273), (1482306060000, 26424386.327273), (1482306120000, 26424386.327273), (1482306180000, 26424386.327273), (1482306240000, 26424386.327273), (1482306300000, 26424386.327273), (1482306360000, 26424386.327273), (1482306420000, 26424386.327273), (1482306480000, 26424386.327273), (1482306540000, 26424386.327273), (1482306600000, 26424386.327273), (1482306660000, 26424386.327273), (1482306720000, 26424386.327273), (1482306780000, 26424386.327273), (1482306840000, 26424386.327273)]
+2016-12-21 15:55:54 [27677] [INFO] Worker exiting (pid: 27677)
+), (1482304860000, 7657126.545455), (1482304920000, 7657126.545455), (1482304980000, 7657126.545455), (1482305040000, 7657126.545455), (1482305100000, 7657126.545455), (1482305160000, 7657126.545455), (1482305220000, 7657126.545455), (1482305280000, 7657126.545455), (1482305340000, 7657126.545455), (1482305400000, 7657126.545455), (1482305460000, 7657126.545455), (1482305520000, 7657126.545455), (1482305580000, 7657126.545455), (1482305640000, 7657126.545455), (1482305700000, 7657126.545455), (1482305760000, 7657126.545455), (1482305820000, 7657126.545455), (1482305880000, 7657126.545455), (1482305940000, 7657126.545455), (1482306000000, 7657126.545455), (1482306060000, 7657126.545455), (1482306120000, 7657126.545455), (1482306180000, 7657126.545455), (1482306240000, 7657126.545455), (1482306300000, 7657126.545455), (1482306360000, 7657126.545455), (1482306420000, 7657126.545455), (1482306480000, 7657126.545455), (1482306540000, 7657126.545455), (1482306600000, 7657126.545455), (1482306660000, 7657126.545455), (1482306720000, 7657126.545455), (1482306780000, 7657126.545455), (1482306840000, 7657126.545455)]
+2016-12-21 15:55:54 [27660] [INFO] Shutting down: Master
+2016-12-21 15:55:56 [27734] [INFO] Starting gunicorn 18.0
+2016-12-21 15:55:56 [27734] [INFO] Listening at: http://0.0.0.0:8081 (27734)
+2016-12-21 15:55:56 [27734] [INFO] Using worker: sync
+2016-12-21 15:55:56 [27740] [INFO] Booting worker with pid: 27740
+2016-12-21 15:55:56 [27741] [INFO] Booting worker with pid: 27741
+2016-12-21 15:55:56 [27747] [INFO] Booting worker with pid: 27747
+2016-12-21 15:55:56 [27758] [INFO] Booting worker with pid: 27758
+2016-12-21 15:57:09 [27734] [INFO] Handling signal: term
+2016-12-21 15:57:09 [27740] [INFO] Worker exiting (pid: 27740)
+2016-12-21 15:57:09 [27758] [INFO] Worker exiting (pid: 27758)
+2016-12-21 15:57:09 [27741] [INFO] Worker exiting (pid: 27741)
+2016-12-21 15:57:09 [27747] [INFO] Worker exiting (pid: 27747)
+2016-12-21 15:57:09 [27734] [INFO] Shutting down: Master
+2016-12-21 15:57:11 [27815] [INFO] Starting gunicorn 18.0
+2016-12-21 15:57:11 [27815] [INFO] Listening at: http://0.0.0.0:8081 (27815)
+2016-12-21 15:57:11 [27815] [INFO] Using worker: sync
+2016-12-21 15:57:11 [27821] [INFO] Booting worker with pid: 27821
+2016-12-21 15:57:11 [27826] [INFO] Booting worker with pid: 27826
+2016-12-21 15:57:11 [27828] [INFO] Booting worker with pid: 27828
+2016-12-21 15:57:11 [27839] [INFO] Booting worker with pid: 27839
+2016-12-21 16:02:11 [27815] [INFO] Handling signal: term
+2016-12-21 16:02:11 [27839] [INFO] Worker exiting (pid: 27839)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:02:11 [27821] [INFO] Worker exiting (pid: 27821)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:02:11 [27826] [INFO] Worker exiting (pid: 27826)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:02:11 [27828] [INFO] Worker exiting (pid: 27828)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:02:11 [27815] [INFO] Shutting down: Master
+2016-12-21 16:02:14 [28031] [INFO] Starting gunicorn 18.0
+2016-12-21 16:02:14 [28031] [INFO] Listening at: http://0.0.0.0:8081 (28031)
+2016-12-21 16:02:14 [28031] [INFO] Using worker: sync
+2016-12-21 16:02:14 [28036] [INFO] Booting worker with pid: 28036
+2016-12-21 16:02:14 [28039] [INFO] Booting worker with pid: 28039
+2016-12-21 16:02:14 [28042] [INFO] Booting worker with pid: 28042
+2016-12-21 16:02:14 [28044] [INFO] Booting worker with pid: 28044
+2016-12-21 16:17:46 [28031] [INFO] Handling signal: term
+2016-12-21 16:17:46 [28036] [INFO] Worker exiting (pid: 28036)
+2016-12-21 16:17:46 [28039] [INFO] Worker exiting (pid: 28039)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:17:46 [28044] [INFO] Worker exiting (pid: 28044)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:17:46 [28042] [INFO] Worker exiting (pid: 28042)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:17:46 [28031] [INFO] Shutting down: Master
+2016-12-21 16:17:48 [28479] [INFO] Starting gunicorn 18.0
+2016-12-21 16:17:48 [28479] [INFO] Listening at: http://0.0.0.0:8081 (28479)
+2016-12-21 16:17:48 [28479] [INFO] Using worker: sync
+2016-12-21 16:17:48 [28484] [INFO] Booting worker with pid: 28484
+2016-12-21 16:17:48 [28488] [INFO] Booting worker with pid: 28488
+2016-12-21 16:17:48 [28490] [INFO] Booting worker with pid: 28490
+2016-12-21 16:17:48 [28500] [INFO] Booting worker with pid: 28500
+2016-12-21 16:19:39 [28479] [INFO] Handling signal: term
+2016-12-21 16:19:39 [28500] [INFO] Worker exiting (pid: 28500)
+2016-12-21 16:19:39 [28488] [INFO] Worker exiting (pid: 28488)
+2016-12-21 16:19:39 [28484] [INFO] Worker exiting (pid: 28484)
+2016-12-21 16:19:39 [28490] [INFO] Worker exiting (pid: 28490)
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+exception: '_AppCtxGlobals' object has no attribute 'p95'
+2016-12-21 16:19:39 [28479] [INFO] Shutting down: Master
+2016-12-21 16:19:41 [28571] [INFO] Starting gunicorn 18.0
+2016-12-21 16:19:41 [28571] [INFO] Listening at: http://0.0.0.0:8081 (28571)
+2016-12-21 16:19:41 [28571] [INFO] Using worker: sync
+2016-12-21 16:19:41 [28576] [INFO] Booting worker with pid: 28576
+2016-12-21 16:19:41 [28582] [INFO] Booting worker with pid: 28582
+2016-12-21 16:19:41 [28583] [INFO] Booting worker with pid: 28583
+2016-12-21 16:19:41 [28594] [INFO] Booting worker with pid: 28594
+2016-12-21 16:20:56 [28571] [INFO] Handling signal: term
+2016-12-21 16:20:56 [28582] [INFO] Worker exiting (pid: 28582)
+2016-12-21 16:20:56 [28594] [INFO] Worker exiting (pid: 28594)
+2016-12-21 16:20:56 [28576] [INFO] Worker exiting (pid: 28576)
+2016-12-21 16:20:56 [28583] [INFO] Worker exiting (pid: 28583)
+2016-12-21 16:20:56 [28571] [INFO] Shutting down: Master
+2016-12-21 16:20:58 [28649] [INFO] Starting gunicorn 18.0
+2016-12-21 16:20:58 [28649] [INFO] Listening at: http://0.0.0.0:8081 (28649)
+2016-12-21 16:20:58 [28649] [INFO] Using worker: sync
+2016-12-21 16:20:58 [28655] [INFO] Booting worker with pid: 28655
+2016-12-21 16:20:58 [28660] [INFO] Booting worker with pid: 28660
+2016-12-21 16:20:58 [28667] [INFO] Booting worker with pid: 28667
+2016-12-21 16:20:58 [28672] [INFO] Booting worker with pid: 28672
+2016-12-21 16:47:33 [28649] [INFO] Handling signal: term
+2016-12-21 16:47:33 [28667] [INFO] Worker exiting (pid: 28667)
+2016-12-21 16:47:33 [28672] [INFO] Worker exiting (pid: 28672)
+2016-12-21 16:47:33 [28655] [INFO] Worker exiting (pid: 28655)
+2016-12-21 16:47:33 [28660] [INFO] Worker exiting (pid: 28660)
+2016-12-21 16:47:33 [28649] [INFO] Shutting down: Master
+2016-12-21 16:47:35 [29410] [INFO] Starting gunicorn 18.0
+2016-12-21 16:47:35 [29410] [INFO] Listening at: http://0.0.0.0:8081 (29410)
+2016-12-21 16:47:35 [29410] [INFO] Using worker: sync
+2016-12-21 16:47:35 [29415] [INFO] Booting worker with pid: 29415
+2016-12-21 16:47:36 [29416] [INFO] Booting worker with pid: 29416
+2016-12-21 16:47:36 [29424] [INFO] Booting worker with pid: 29424
+2016-12-21 16:47:36 [29433] [INFO] Booting worker with pid: 29433
+2016-12-21 16:48:06 [29410] [INFO] Handling signal: term
+2016-12-21 16:48:06 [29416] [INFO] Worker exiting (pid: 29416)
+2016-12-21 16:48:06 [29415] [INFO] Worker exiting (pid: 29415)
+2016-12-21 16:48:06 [29424] [INFO] Worker exiting (pid: 29424)
+2016-12-21 16:48:06 [29433] [INFO] Worker exiting (pid: 29433)
+exception: global name 'method95' is not defined
+exception: global name 'method95' is not defined
+2016-12-21 16:48:06 [29410] [INFO] Shutting down: Master
+2016-12-21 16:48:08 [29470] [INFO] Starting gunicorn 18.0
+2016-12-21 16:48:08 [29470] [INFO] Listening at: http://0.0.0.0:8081 (29470)
+2016-12-21 16:48:08 [29470] [INFO] Using worker: sync
+2016-12-21 16:48:08 [29476] [INFO] Booting worker with pid: 29476
+2016-12-21 16:48:08 [29481] [INFO] Booting worker with pid: 29481
+2016-12-21 16:48:09 [29487] [INFO] Booting worker with pid: 29487
+2016-12-21 16:48:09 [29489] [INFO] Booting worker with pid: 29489
+2016-12-21 19:05:03 [29470] [CRITICAL] WORKER TIMEOUT (pid:29487)
+2016-12-21 19:05:03 [29470] [CRITICAL] WORKER TIMEOUT (pid:29487)
+2016-12-21 19:05:03 [1012] [INFO] Booting worker with pid: 1012
+2016-12-21 21:51:41 [29470] [INFO] Handling signal: term
+2016-12-21 21:51:41 [1012] [INFO] Worker exiting (pid: 1012)
+2016-12-21 21:51:41 [29481] [INFO] Worker exiting (pid: 29481)
+2016-12-21 21:51:41 [29476] [INFO] Worker exiting (pid: 29476)
+2016-12-21 21:51:41 [29489] [INFO] Worker exiting (pid: 29489)
+2016-12-21 21:51:41 [29470] [INFO] Shutting down: Master
+2016-12-21 21:51:43 [6588] [INFO] Starting gunicorn 18.0
+2016-12-21 21:51:43 [6588] [INFO] Listening at: http://0.0.0.0:8081 (6588)
+2016-12-21 21:51:43 [6588] [INFO] Using worker: sync
+2016-12-21 21:51:43 [6595] [INFO] Booting worker with pid: 6595
+2016-12-21 21:51:43 [6601] [INFO] Booting worker with pid: 6601
+2016-12-21 21:51:43 [6602] [INFO] Booting worker with pid: 6602
+2016-12-21 21:51:43 [6612] [INFO] Booting worker with pid: 6612
+2016-12-21 21:54:38 [6588] [INFO] Handling signal: term
+2016-12-21 21:54:38 [6612] [INFO] Worker exiting (pid: 6612)
+2016-12-21 21:54:38 [6595] [INFO] Worker exiting (pid: 6595)
+2016-12-21 21:54:38 [6602] [INFO] Worker exiting (pid: 6602)
+2016-12-21 21:54:38 [6601] [INFO] Worker exiting (pid: 6601)
+2016-12-21 21:54:38 [6588] [INFO] Shutting down: Master
+2016-12-21 21:54:40 [6732] [INFO] Starting gunicorn 18.0
+2016-12-21 21:54:40 [6732] [INFO] Listening at: http://0.0.0.0:8081 (6732)
+2016-12-21 21:54:40 [6732] [INFO] Using worker: sync
+2016-12-21 21:54:40 [6738] [INFO] Booting worker with pid: 6738
+2016-12-21 21:54:40 [6739] [INFO] Booting worker with pid: 6739
+2016-12-21 21:54:40 [6749] [INFO] Booting worker with pid: 6749
+2016-12-21 21:54:40 [6756] [INFO] Booting worker with pid: 6756
